@@ -1,0 +1,86 @@
+@CHARSET "UTF-8";
+
+body, 
+div, 
+header, 
+main, 
+section, 
+footer, 
+h1, 
+h2, 
+h3, 
+p, 
+a {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #000;
+	font-size: 16px;
+	font-family: arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+#container {
+	width: 1170px;
+	margin: auto;
+	margin-top: 10px;
+}
+
+header, 
+main {
+	width: 100%;
+}
+
+header h1 {
+	margin: 10px;
+	padding: 10px;
+	background-color: #4483C7;
+}
+
+header h1 a {
+	font-size: 1.6em;
+	color: #FFF;
+}
+
+main {
+	width: 90%;
+	margin: auto;
+}
+
+main h2 {
+	margin: 10px;
+	padding: 5px;
+	font-size: 1.4em;
+}
+
+main section {
+	width: 100%;
+	border: 1px solid #538620;
+	margin: 10px;
+	padding-bottom: 5px;
+}
+
+main section h3 {
+	padding: 5px;
+	font-size: 1.2em;
+	color: #FFF;
+	background-color: #538620;
+}
+
+main section p {
+	padding: 2px 5px;
+}
+
+main section footer p {
+	padding: 0 5px;
+	font-size: 0.8em;
+	color: #888;
+}
+
+main section footer p a {
+	font-size: inherit;
+	color: #888;
+}

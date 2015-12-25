@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+
+body, 
+div {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#roulette {
+	position: relative;
+	width: 450px;
+	height: 470px;
+	margin: auto;
+	margin-top: 100px;
+	background: url("../images/roulette.jpg");
+}
+
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(-90deg) translateX(145px); }
+    to   { -webkit-transform: rotate(270deg) translateX(145px); }
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(-90deg) translateX(145px); }
+    to   { -moz-transform: rotate(270deg) translateX(145px); }
+}
+
+@-o-keyframes spin {
+    from { -o-transform: rotate(-90deg) translateX(145px); }
+    to   { -o-transform: rotate(270deg) translateX(145px); }
+}
+
+@keyframes spin {
+	from { transform: rotate(-90deg) translateX(145px); }
+    to   { transform: rotate(270deg) translateX(145px); }
+}
+
+#ball {
+	position: absolute;
+	top: 208px;
+	left: 212px;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color: #000;
+	animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+}
